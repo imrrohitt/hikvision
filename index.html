@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HikVision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="#" class="logo"><img src="images/hikvision-logo (1).svg" alt="Hikvision Logo"></a>
+    </div>
+    <div class="navbar-right">
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="#">Cameras</a>
+                    <a href="#">Recorders</a>
+                    <a href="#">Access Control</a>
+                    <a href="#">Intercoms</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Solutions</a>
+                <div class="dropdown-content">
+                    <a href="#">Smart Home</a>
+                    <a href="#">Smart City</a>
+                    <a href="#">Business Intelligence</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Services & Support</a>
+                <div class="dropdown-content">
+                    <a href="#">Technical Support</a>
+                    <a href="#">Training & Certification</a>
+                    <a href="#">Download Center</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Partner Area</a>
+                <div class="dropdown-content">
+                    <a href="#">Partner Programs</a>
+                    <a href="#">Partner Portal</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Corporate</a>
+                <div class="dropdown-content">
+                    <a href="#">About Hikvision</a>
+                    <a href="#">News & Events</a>
+                    <a href="#">Careers</a>
+                </div>
+            </li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="nav-action">Search</a>
+            <a href="#" class="nav-action">Where to Buy</a>
+            <a href="#" class="nav-action">Company Deals</a>
+        </div>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+
+      <!-- crausel section -->
+    <main>
+        <div id="carouselExampleIndicators" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-color:rgb(0, 13, 13)">
+                    <div class="carousel-caption">
+                        <h2>Your Skills. Your Ideas. Your Stage.</h2>
+                        <p>Join #HikTechStar Show, Showcase Your Expertise</p>
+                        <button class="download-button">Act now</button>
+                    </div>
+                    <img src="/images/HikTechStar-Show-banner-MO.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item" style="background-color:#cbebec;">
+                    <div class="carousel-caption" style="color:black">
+                        <h2>Quick Guide for Project-Oriented Premium Products</h2>
+                        <p>Explore Hikvision's newest AloT products & solutions</p>
+                        <button class="download-button">Download Now</button>
+                    </div>
+                    <img src="images/Quick-Guide-for-Project-Oriented-Premium-Products-MO.jpg" alt="Second slide">
+                </div>
+
+                <div class="carousel-item" style="background-color:rgb(0, 13, 13)">
+                    <div class="carousel-caption">
+                        <h2>Your Skills. Your Ideas. Your Stage.</h2>
+                        <p>Join #HikTechStar Show, Showcase Your Expertise</p>
+                        <button class="download-button">Act now</button>
+                    </div>
+                    <img src="/images/HikTechStar-Show-banner-MO.jpg" alt="First slide">
+                </div>
+            </div>
+            <div class="carousel-loading"></div>
+        </div>
+
+        <div class="img-container">
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/icons/home-icon_Blogs.png" alt="Image 1">
+                    <p>Blog</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/icons/home-icon_eLearning.png" alt="Image 2">
+                    <p>eLearning</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/icons/home-icon_Hikvision-Live.png" alt="Image 3">
+                    <p>Hikvision</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/icons/home-icon_success-story.png" alt="Image 4">
+                    <p>Success Story</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/icons/home-icon_Sustainability_1.png" alt="Image 5">
+                    <p>Sustainability</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- products spotlight section -->
+
+    <div class="container">
+        <h1>Product Spotlight</h1>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="images/new_items/HikTechStar-Show-banner-MO.jpg"alt="Product 1">
+                <div class="product-info">
+                    <h3>Product 1</h3>
+                    <p>Description of Product 1. This is a great product with amazing features.</p>
+                    <div class="compare-section">
+                        <label>
+                            <input type="checkbox" name="compare" value="product4">
+                            Add to Compare
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/new_items/pexels-ash-122861-376464.jpg" alt="Product 2">
+                <div class="product-info">
+                    <h3>Product 2</h3>
+                    <p>Description of Product 2. You'll love the quality and performance.</p>
+                    <div class="compare-section">
+                        <label>
+                            <input type="checkbox" name="compare" value="product4">
+                            Add to Compare
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/new_items/pexels-binoid-cbd-1990665-3612182.jpg" alt="Product 3">
+                <div class="product-info">
+                    <h3>Product 3</h3>
+                    <p>Description of Product 3. Innovative design meets functionality.</p>
+                    <div class="compare-section">
+                        <label>
+                            <input type="checkbox" name="compare" value="product4">
+                            Add to Compare
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/new_items/pexels-pixabay-248412.jpg" alt="Product 4">
+                <div class="product-info">
+                    <h3>Product 4</h3>
+                    <p>Description of Product 4. The perfect solution for your needs.</p>
+                    <div class="compare-section">
+                        <label>
+                            <input type="checkbox" name="compare" value="product4">
+                            Add to Compare
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+ 
+
+    
+    <!-- what's new section  -->
+    <div class="container">
+    <h1 >What's New</h1>
+    <div class="whats-new-gallery">
+        <div class="new-item large">
+            <img src="images/new_items/HikTechStar-Show-banner-MO.jpg" alt="New Item 1">
+            <div class="new-item-caption">New Arrival</div>
+           
+        </div>
+        <div class="new-item large">
+            <img src="images/new_items/pexels-ash-122861-376464.jpg" alt="New Item 2">
+            <div class="new-item-caption">Limited Edition</div>
+            
+        </div>
+        <div class="new-item small">
+            <img src="images/new_items/pexels-binoid-cbd-1990665-3612182.jpg" alt="New Item 3">
+            <div class="new-item-caption">Best Seller</div>
+            
+        </div>
+        <div class="new-item small">
+            <img src="images/new_items/pexels-mikebirdy-380954.jpg" alt="New Item 4">
+            <div class="new-item-caption">Sale</div>
+           
+        </div>
+        <div class="new-item small">
+            <img src="images/new_items/pexels-pixabay-248412.jpg" alt="New Item 5">
+            <div class="new-item-caption">Coming Soon</div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+ <!-- footer -->
+ <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Cybersecurity</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Focused on Quality</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Newsroom</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">Video Library</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Events</h3>
+        <ul>
+          <li><a href="#">Event List</a></li>
+          <li><a href="#">Hikvision Live</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Hikvision eLearning</a></li>
+          <li><a href="#">Where to Buy</a></li>
+          <li><a href="#">Discontinued Products</a></li>
+          <li><a href="#">Core Technologies</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <ul>
+          <li><a href="#" class="contact-btn">Contact Us</a></li>
+          <li><a href="#" class="subscribe-btn">Subscribe Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2024 Hangzhou Hikvision Digital Technology Co., Ltd. All Rights Reserved.
+      </div>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Cookies Preferences</a>
+        <a href="#">General Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
