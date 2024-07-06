@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.compare-section {
+    margin-top: 10px;
+}
+
+.search-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> AxelGuard Products</h1>
+        <form>
+            <input type="search" id="search-input" placeholder="Search products..." class="search-box">
+            <button id="search-button" class="search-button">Search</button>
+        </form>
+        <div class="product-gallery">
+        </div> 
+    </div>
+
+    <script >
+
+function fetch_data() {
+    const jsonUrl = 'data.json';
+
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Filter out invalid rows where the serial number is not a valid number
+            const filteredRows = data.filter(row => {
+                const serialNo = row["S. No"].toString().trim();
+                return serialNo && /^[0-9]+$/.test(serialNo);
+            });
+
+            const gallery = document.querySelector('.product-gallery');
+            filteredRows.forEach(row => {
+                const productName = row["Product Name"];
+                const productCode = row["Product Code"];
+                const weight = row["Weight in Kg"];
+                const productImage1 = row["Product Images1"];
+                const productDescription = `Product Code: ${productCode}, Weight: ${weight}kg`;
+                
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+                productCard.innerHTML = `
+                    <a href="description.html?productCode=${productCode}">
+                        <img src="${productImage1}" alt="${productName}">
+                        <div class="product-info">
+                            <h3>${productName}</h3>
+                            <p>${productDescription}</p>
+                            <div class="compare-section">
+                                <label>
+                                    <input type="checkbox" name="compare" value="${productCode}">
+                                    Add to Compare
+                                </label>
+                            </div>
+                        </div>
+                    </a>
+                `;
+                gallery.appendChild(productCard);
+            });
+        })
+        .catch(error => console.error('Error fetching the JSON file:', error));
+}
+
+function searchProducts() {
+    const searchInput = document.getElementById('search-input');
+    const searchQuery = searchInput.value.toLowerCase();
+    const gallery = document.querySelector('.product-gallery');
+    const products = gallery.children;
+
+    Array.prototype.forEach.call(products, (product) => {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        const productDescription = product.querySelector('p').textContent.toLowerCase();
+
+        if (productName.includes(searchQuery) || productDescription.includes(searchQuery)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
+document.getElementById('search-input').addEventListener('keyup', searchProducts);
+
+fetch_data();
+    </script>
+</body>
+</html>
