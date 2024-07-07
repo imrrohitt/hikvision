@@ -57,6 +57,25 @@
                 justify-content: flex-start;
             }
         }
+        #pdfDownloadContainer {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            border: 1px solid rgb(104, 104, 143);
+            border-radius: 20px;
+            margin: 10px;
+            position: relative;
+            top: 20px;
+            background-color: #e8e3ed;
+            display: inline-block;
+        }
+        #pdfDownloadContainer a{
+            text-decoration: none;
+            font-weight: 600;
+        }
+        #pdfDownloadContainer:hover {
+            background-color: #d1c8e1;
+        }
     </style>
 </head>
 <body>
@@ -127,6 +146,7 @@
             <div class="product-info">
                 <h1 id="productName"></h1>
                 <p id="productDescription"></p>
+                <div id="pdfDownloadContainer"></div>
             </div>
         </div>
     </div>
@@ -239,6 +259,15 @@ function fetchProductData() {
                         }
                     }
                 });
+
+                if (product["Product DataSheet"]) {
+                            const pdfDownloadContainer = document.getElementById('pdfDownloadContainer');
+                            const pdfDownloadLink = document.createElement('a');
+                            pdfDownloadLink.href = product["Product DataSheet"];
+                            pdfDownloadLink.textContent = 'Download Product Features PDF';
+                            pdfDownloadLink.download = '';
+                            pdfDownloadContainer.appendChild(pdfDownloadLink);
+                        }
                 
                 activateNextThumbnail(thumbnailImages, productImages);
             } else {
