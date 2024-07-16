@@ -37,35 +37,38 @@ function toggleMenu() {
         }, 500); // Delay the transition for 500ms to show the loading indicator
     }, interval);
 })();
-function fetch_data() {
-    const sheetUrl = 'https://docs.google.com/spreadsheets/d/1Ry7rSEHxU9hosS0EYZA2qsSqNYfX58af1HeVMWnhKdM/export?format=csv';
 
-    fetch(sheetUrl)
-        .then(response => response.text())
+
+
+function fetch_data() {
+    const jsonUrl = 'data.json';
+
+    fetch(jsonUrl)
+        .then(response => response.json())
         .then(data => {
-            const rows = data.split('\n').map(row => row.split(','));
-            const filteredRows = rows.filter(row => {
-                const serialNo = row[0].trim();
+            // Filter out invalid rows where the serial number is not a valid number
+            const filteredRows = data.filter(row => {
+                const serialNo = row["S. No"].toString().trim();
                 return serialNo && /^[0-9]+$/.test(serialNo);
             });
 
             const gallery = document.querySelector('.product-gallery');
+            let count = 0;
+            const maxProductsToShow = 4;
             filteredRows.forEach(row => {
-                const productName = row[2];
-                const productCode = row[3];
-                const weight = row[4];
-                const productImage1 = row[7];
+                if (count >= maxProductsToShow) return;
+
+                const productName = row["Product Name"];
+                const productCode = row["Product Code"];
+                const weight = row["Weight in Kg"];
+                const productImage1 = row["Product Images1"];
                 const productDescription = `Product Code: ${productCode}, Weight: ${weight}kg`;
-
-                // Convert Google Drive link to a direct image link
-                const driveImageLink = productImage1.replace("https://drive.google.com/file/d/", "https://lh3.google.com/u/0/d/")
-                const driveImageLink1 = driveImageLink.replace("/view?usp=drive_link", "");
-
+                
                 const productCard = document.createElement('div');
                 productCard.classList.add('product-card');
                 productCard.innerHTML = `
                     <a href="description.html?productCode=${productCode}">
-                        <img src="${driveImageLink1}" alt="${productName}">
+                        <img src="${productImage1}" alt="${productName}">
                         <div class="product-info">
                             <h3>${productName}</h3>
                             <p>${productDescription}</p>
@@ -79,28 +82,11 @@ function fetch_data() {
                     </a>
                 `;
                 gallery.appendChild(productCard);
+                count++;
             });
         })
-        .catch(error => console.error('Error fetching the Google Sheet:', error));
+        .catch(error => console.error('Error fetching the JSON file:', error));
 }
+
 fetch_data();
 
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
-
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
-    });
-});
-
-function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-}
-
-window.addEventListener('resize', slideImage);
