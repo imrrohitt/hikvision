@@ -1,0 +1,429 @@
+{
+    "categories": {
+      "MDVR": [
+        {
+          "S.No": 1,
+          "Product Name": "4ch 1080p SD Card MDVR (MR9504EC)",
+          "Product Code": "AXG01",
+          "Weight in Kg": 1,
+          "Product DataSheet": "https://drive.google.com/file/d/1kx8XJqGy4_2Ne8ffzNBaWx8wwQt3FiML/view?usp=drive_link",
+          "product images" : {
+             "Image1" : "/images/BasicMDVR/Basic MDVR.jpg",
+             "Image2" : "/images/BasicMDVR/Basic MDVR2.jpg",
+             "Image3" : "/images/BasicMDVR/Basic MDVR3.jpg"
+          },
+          "Product Specification": {
+            "features": [
+              "Built-in high performance SigmaStar Image chipsets, H.265/H.264 standard, high compression rate and image quality",
+              "3.4 CH 1080P live preview and storage",
+              "Support UPS power input",
+              "Unique GPS drift suppression algorithm"
+            ],
+            "technical_features": [
+              "Professional vehicle power supply 9-36V DC wide voltage Special file management system to encrypt and protect the data",
+              "Built-in super capacitor, avoid data loss and SD card damage caused by sudden outage",
+              "Support GPS/BD optional, high sensitivity, fast positioning",
+              "Operating system Embedded Linux OS"
+            ]
+          }          
+        },
+        {
+          "S.No": 2,
+          "Product Name": "4ch 1080p HDD MDVR (MR9704C)",
+          "Product Code": "AXG02",
+          "Weight in Kg": 2,
+          "Product DataSheet": "https://drive.google.com/file/d/1s3BoK1UMAlmNfnpnw5jPUY22zM3Akde4/view?usp=drive_link",
+          "Product Specification": {
+            "key_features": {
+              "chipsets": "Built-in high-performance chipsets, coded with H.265 standard.",
+              "video_input": "Supports AHD, TVI, CVI, IPC, and Analog formats.",
+              "live_preview_and_storage": "4+1 channels.",
+              "video_output": "1CH synchronized AV output, 1CH VGA output.",
+              "g_sensor": "Built-in for monitoring driving habits.",
+              "reverse_assistance": "Allows for horizontal and vertical camera image adjustment."
+            },
+            "technical_parameters": {
+              "operating_system": "Embedded Linux OS.",
+              "interface": "GUI, supports mouse and remote control.",
+              "password_security": "Two-layer password protection (Admin/User).",
+              "video_compression": "H.265.",
+              "image_resolution": "1080P/720P/960H/D1/CIF.",
+              "recording_modes": "Manual and Alarm.",
+              "interface_ports": {
+                "av_input": "4CH 4-pin aviation + 1CH 6-pin aviation for IPC.",
+                "av_output": "1CH VGA, 1CH aviation AV output.",
+                "usb": "1 USB 2.0 (supports U disk/mouse).",
+                "ethernet": "1 x 6-pin aviation to RJ45 (10M/100M).",
+                "additional_ports": "UART, ignition input, disaster recovery, debug port."
+              },
+              "dimensions": "162mm x 153mm x 52mm."
+            }
+          }          
+        },
+        {
+          "S.No": 3,
+          "Product Name": "4ch 1080p SD, 4G, GPS MDVR (MR9504E)",
+          "Product Code": "AXG03",
+          "Weight in Kg": 1,
+          "Product DataSheet": "https://drive.google.com/file/d/1wHrsxLdM1wIP2-cSxFzsZFRon6DkyWl-/view?usp=drive_link",
+          "Product Specification": {
+            "key_features": {
+              "chipset": "H.264/H.265 standard for high compression and image quality.",
+              "video_input": "Supports AHD/TVI/CVI/IPC/ANALOG.",
+              "outputs": "1CH AV, 1CH VGA.",
+              "power": "Operates on 8-36V DC with multiple protection circuits.",
+              "g_sensor": "Monitors driving habits.",
+              "storage": "Supports SD cards up to 512GB, with built-in super capacitor to prevent data loss.",
+              "transmission": "Optional GPS/BD/GLONASS, WiFi, and 3G/4G.",
+              "os": "Embedded Linux with GUI interface.",
+              "resolution": "1080P/720P/960H/D1/CIF.",
+              "recording": "Automatic/Alarm modes, 4CH local playback.",
+              "interface": {
+                "av_inputs": "4 AV inputs.",
+                "usb": "1 USB 2.0.",
+                "sdxc_slot": "1 SDXC slot."
+              },
+              "power_consumption": "Maximum 18W@12V, standby 8.5mA.",
+              "dimensions": "142mm x 153mm x 33mm.",
+              "temperature_range": "-20 to 70°C."
+            },
+            "technical_parameters": {
+              "operating_system": "Embedded Linux OS.",
+              "video_standard": "PAL/NTSC.",
+              "compression": "H.264/H264+/H265/H265+.",
+              "playback_quality": "1080P/720P/960H/D1/CIF.",
+              "audio_compression": "G711A, G711, G.726, MG.726, ADPCM, IMA.",
+              "decoding_ability": "4CH 1080P.",
+              "ethernet": "1 x 6 pin aviation to RJ45 (10M/100M).",
+              "storage_size": {
+                "1080p": "1G/h/channel.",
+                "720p": "0.5G/h/channel.",
+                "960h": "0.38G/h/channel."
+              }
+            }
+          }          
+        },
+        {
+          "S.No": 4,
+          "Product Name": "4ch 1080p HDD, 4G, GPS MDVR (MR9704E)",
+          "Product Code": "AXG04",
+          "Weight in Kg": 2,
+          "Product DataSheet": "https://drive.google.com/file/d/1s3BoK1UMAlmNfnpnw5jPUY22zM3Akde4/view?usp=drive_link",
+          "Product Specification": {
+            "key_features": {
+              "chipsets": "Built-in high-performance chipsets, coded with H.265 standard.",
+              "video_input": "Supports AHD, TVI, CVI, IPC, and Analog formats.",
+              "live_preview_and_storage": "4+1 channels.",
+              "video_output": "1CH synchronized AV output, 1CH VGA output.",
+              "g_sensor": "Built-in for monitoring driving habits.",
+              "reverse_assistance": "Allows for horizontal and vertical camera image adjustment."
+            },
+            "technical_parameters": {
+              "operating_system": "Embedded Linux OS.",
+              "interface": "GUI, supports mouse and remote control.",
+              "password_security": "Two-layer password protection (Admin/User).",
+              "video_compression": "H.265.",
+              "image_resolution": "1080P/720P/960H/D1/CIF.",
+              "recording_modes": "Manual and Alarm.",
+              "interface_ports": {
+                "av_input": "4CH 4-pin aviation + 1CH 6-pin aviation for IPC.",
+                "av_output": "1CH VGA, 1CH aviation AV output.",
+                "usb": "1 USB 2.0 (supports U disk/mouse).",
+                "ethernet": "1 x 6-pin aviation to RJ45 (10M/100M).",
+                "additional_ports": "UART, ignition input, disaster recovery, debug port."
+              },
+              "dimensions": "162mm x 153mm x 52mm."
+            }
+          }          
+        },
+        {
+          "S.No": 5,
+          "Product Name": "4ch 1080p SD, 4G, wifi, GPS MDVR (MA9504ED)",
+          "Product Code": "AXG58",
+          "Weight in Kg": 1,
+          "Product DataSheet": "https://drive.google.com/file/d/1wHrsxLdM1wIP2-cSxFzsZFRon6DkyWl-/view?usp=drive_link",
+          "Product Specification": {
+            "features": {
+              "chipset": "H.264/H.265 standard for high compression and image quality.",
+              "video_input": "Supports AHD/TVI/CVI/IPC/ANALOG.",
+              "outputs": "1CH AV, 1CH VGA.",
+              "power": "Operates on 8-36V DC with multiple protection circuits.",
+              "g_sensor": "Monitors driving habits.",
+              "storage": "Supports SD cards up to 512GB, with built-in super capacitor to prevent data loss.",
+              "transmission": "Optional GPS/BD/GLONASS, WiFi, and 3G/4G.",
+              "os": "Embedded Linux with GUI interface.",
+              "resolution": "1080P/720P/960H/D1/CIF.",
+              "recording": "Automatic/Alarm modes, 4CH local playback.",
+              "interface": "4 AV inputs, 1 USB 2.0, 1 SDXC slot, and more.",
+              "power_consumption": "Maximum 18W@12V, standby 8.5mA.",
+              "dimensions": "14215333mm.",
+              "temperature_range": "-20 to 70°C."
+            },
+            "technical_parameters": {
+              "operating_system": "Embedded Linux OS.",
+              "video_standard": "PAL/NTSC.",
+              "compression": "H.264/H264+/H265/H265+.",
+              "playback_quality": "1080P/720P/960H/D1/CIF.",
+              "audio_compression": "G711A, G711, G.726, MG.726, ADPCM, IMA.",
+              "decoding_ability": "4CH 1080P.",
+              "ethernet": "1 x 6 pin aviation to RJ45 (10M/100M).",
+              "storage_size": {
+                "1080P": "1G/h/channel",
+                "720P": "0.5G/h/channel",
+                "960H": "0.38G/h/channel"
+              }
+            }
+          }          
+        },
+        {
+          "S.No": 6,
+          "Product Name": "TVS 4ch 1080p SD, 4G, GPS MDVR",
+          "Product Code": "TVS43",
+          "Weight in Kg": 1,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 7,
+          "Product Name": "5ch MDVR SD 4g + GPS + LAN + RS232 + RS485",
+          "Product Code": "AXG46",
+          "Weight in Kg": 1,
+          "Product DataSheet": "https://drive.google.com/file/d/1wHrsxLdM1wIP2-cSxFzsZFRon6DkyWl-/view?usp=drive_link",
+          "Product Specification": {
+            "features": {
+              "chipset": "H.264/H.265 standard for high compression and image quality.",
+              "video_input": "Supports AHD/TVI/CVI/IPC/ANALOG.",
+              "outputs": "1CH AV, 1CH VGA.",
+              "power": "Operates on 8-36V DC with multiple protection circuits.",
+              "g_sensor": "Monitors driving habits.",
+              "storage": "Supports SD cards up to 512GB, with built-in super capacitor to prevent data loss.",
+              "transmission": "Optional GPS/BD/GLONASS, WiFi, and 3G/4G.",
+              "os": "Embedded Linux with GUI interface.",
+              "resolution": "1080P/720P/960H/D1/CIF.",
+              "recording": "Automatic/Alarm modes, 4CH local playback.",
+              "interface": "4 AV inputs, 1 USB 2.0, 1 SDXC slot, and more.",
+              "power_consumption": "Maximum 18W@12V, standby 8.5mA.",
+              "dimensions": "142x153x33mm.",
+              "temperature_range": "-20 to 70°C."
+            },
+            "technical_parameters": {
+              "operating_system": "Embedded Linux OS.",
+              "video_standard": "PAL/NTSC.",
+              "compression": "H.264/H264+/H265/H265+.",
+              "playback_quality": "1080P/720P/960H/D1/CIF.",
+              "audio_compression": "G711A, G711, G.726, MG.726, ADPCM, IMA.",
+              "decoding_ability": "4CH 1080P.",
+              "ethernet": "1 x 6 pin aviation to RJ45 (10M/100M).",
+              "storage_size": {
+                "1080P": "1G/h/channel",
+                "720P": "0.5G/h/channel",
+                "960H": "0.38G/h/channel"
+              }
+            }
+          }          
+        },
+        {
+          "S.No": 8,
+          "Product Name": "5ch MDVR HDD 4g + GPS + LAN + RS232 + RS485",
+          "Product Code": "AXG47",
+          "Weight in Kg": 2.2,
+          "Product DataSheet": "https://drive.google.com/file/d/1zKfL9yCuPW1KXXuWTakJfA5GgoGrMKCZ/view?usp=drive_link",
+          "Product Specification": "https://drive.google.com/file/d/1ChARXOIxtl_DOjKGU4Uxg_t6pZESk48_/view?usp=drive_link"
+        },
+        {
+          "S.No": 9,
+          "Product Name": "8ch HDD 4g+GPS MDVR (MR9708C)",
+          "Product Code": "",
+          "Weight in Kg": 3,
+          "Product DataSheet": "https://drive.google.com/file/d/1s3BoK1UMAlmNfnpnw5jPUY22zM3Akde4/view?usp=drive_link",
+          "Product Specification": "https://drive.google.com/file/d/1ChARXOIxtl_DOjKGU4Uxg_t6pZESk48_/view?usp=drive_link"
+        },
+        {
+          "S.No": 10,
+          "Product Name": "AI MDVR with (DSM + ADAS) (SD+ 4g + GPS)",
+          "Product Code": "AXG38",
+          "Weight in Kg": 2,
+          "Product DataSheet": "https://drive.google.com/file/d/1TnXAGmHSLLkc2WqvNl4GvlrQOuDxIRqh/view?usp=drive_link",
+          "Product Specification": "https://drive.google.com/file/d/1NY8XLEs4Hm3MzTzZn-J5eA0vbLqUQWqg/view?usp=drive_link"
+        },
+        {
+          "S.No": 11,
+          "Product Name": "AI MDVR with (DSM + ADAS) (SD+HDD+ 4g + GPS)",
+          "Product Code": "AXG72",
+          "Weight in Kg": 3,
+          "Product DataSheet": "https://drive.google.com/file/d/1kZJa-It_cRTissuWzyitrLpX_mHl1tAF/view?usp=drive_link",
+          "Product Specification": "https://drive.google.com/file/d/1Q2RtL5lu9bHQdAb2KVNczY91bTsfCvag/view?usp=drive_link"
+        }
+      ],
+      "Monitors & Monitor Kit": [
+        {
+          "S.No": 1,
+          "Product Name": "7\" AV Monitor",
+          "Product Code": "AXG05",
+          "Weight in Kg": 1,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 2,
+          "Product Name": "7\" VGA Monitor",
+          "Product Code": "AXG06",
+          "Weight in Kg": 1,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 3,
+          "Product Name": "7\" HDMI Monitor",
+          "Product Code": "",
+          "Weight in Kg": 1,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 4,
+          "Product Name": "7inch Heavy Duty VGA Monitor",
+          "Product Code": "AXG56",
+          "Weight in Kg": 1,
+          "Product DataSheet": "https://drive.google.com/file/d/14BehiqIiUTy3ol9ev_BFf5Gps10OGor_/view?usp=drive_link",
+          "Product Specification": {
+            "Features": {
+              "Screen Size and Ratio": "7-inch TFT-LCD screen with a 16:9 aspect ratio.",
+              "High Resolution": "Display resolution of 800x480 pixels.",
+              "Brightness and Contrast": "Brightness of 350 cd/m2 and a contrast ratio of 400:1.",
+              "Wide Viewing Angle": "View angle is 70° (Up), 45° (Down), and 70° (Left/Right).",
+              "Multi-language OSD": "Supports multiple languages including Chinese, English, German, French, and Italian."
+            },
+            "Technical Specifications": {
+              "Power Input": "Operates on a DC input of +9V to +35V.",
+              "Power Consumption": "Less than 6W.",
+              "Temperature Range": {
+                "Working Temperature": "-30°C to 70°C",
+                "Storage Temperature": "-40°C to 75°C"
+              },
+              "Video Input": "Supports CVBS and VGA video inputs.",
+              "Dimensions and Weight": {
+                "Dimensions": "185mm (L) x 135mm (W) x 60mm (T) with a sunhat",
+                "Weight": "Approximately 0.45 kg"
+              }
+            }
+          }          
+        },
+        {
+          "S.No": 5,
+          "Product Name": "4inch AV monitor",
+          "Product Code": "AXG37",
+          "Weight in Kg": 0.6,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 6,
+          "Product Name": "4k Recording monitor kit",
+          "Product Code": "AXG22",
+          "Weight in Kg": 3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 7,
+          "Product Name": "720 2ch Recording Monitor Kit",
+          "Product Code": "AXG69",
+          "Weight in Kg": 3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        }
+      ],
+      "Cameras": [
+        {
+          "S.No": 1,
+          "Product Name": "2 MP IR indoor Dome Camera",
+          "Product Code": "AXG10",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 2,
+          "Product Name": "2 MP IR Outdoor Bullet Camera",
+          "Product Code": "AXG11",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 3,
+          "Product Name": "2 MP Heavy Duty Bullet Camera ",
+          "Product Code": "AXG57",
+          "Weight in Kg": 0.4,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 4,
+          "Product Name": "2 MP Heavy Duty Dome Camera ",
+          "Product Code": "AXG58",
+          "Weight in Kg": 0.4,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 5,
+          "Product Name": "PTZ Camera",
+          "Product Code": "AXG32",
+          "Weight in Kg": "",
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 6,
+          "Product Name": "4k Monitor Camera`",
+          "Product Code": "AXG33",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 7,
+          "Product Name": "Replacement Bullet Camera 2mp",
+          "Product Code": "AXG59",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 8,
+          "Product Name": "Replacement Dome Camera 2 mp",
+          "Product Code": "AXG60",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 9,
+          "Product Name": "Replacement Dome Audio Camera",
+          "Product Code": "AXG61",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 10,
+          "Product Name": "Reverse Camera",
+          "Product Code": "AXG35",
+          "Weight in Kg": "",
+          "Product DataSheet": "",
+          "Product Specification": ""
+        },
+        {
+          "S.No": 11,
+          "Product Name": "2mp IR Audio Camera",
+          "Product Code": "AXG42",
+          "Weight in Kg": 0.3,
+          "Product DataSheet": "",
+          "Product Specification": ""
+        }
+      ]
+    }
+  }
+  
