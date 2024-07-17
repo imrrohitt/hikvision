@@ -3,162 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AxelGuard Products</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        /* .navbar {
+            background-color: #2e3192;
+            padding: 15px 20px;
+            color: white;
+        } */
 
-h1 {
-    text-align: center;
-}
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
 
-.product-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-}
+        h1 {
+            text-align: center;
+            color: #2e3192;
+            margin-bottom: 30px;
+        }
 
-.product-card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-}
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
-}
+        .search-box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            width: 300px;
+            font-size: 16px;
+        }
 
-.product-info {
-    margin-top: 10px;
-}
+        .search-button {
+            background-color: #00a699;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
 
-.compare-section {
-    margin-top: 10px;
-}
+        .search-button:hover {
+            background-color: #008c7e;
+        }
 
-.search-box {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px;
-    font-size: 16px;
-}
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
 
-.search-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .product-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
 
-.search-button:hover {
-    background-color: #3e8e41;
-}
+        .product-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
 
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-    .product-gallery {
-        grid-template-columns: 1fr;
-    }
-}
+        .product-info {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-info h3 {
+            margin: 0 0 10px;
+            color: #2e3192;
+        }
+
+        .product-info p {
+            margin: 0 0 15px;
+            color: #666;
+            flex-grow: 1;
+        }
+
+        .product-features {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .product-features ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-features li {
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .view-details {
+            background-color: #00a699;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .view-details:hover {
+            background-color: #008c7e;
+        }
+
+        .compare-checkbox {
+            display: flex;
+            align-items: center;
+            color: #2e3192;
+            font-size: 14px;
+        }
+
+        .compare-checkbox input {
+            margin-right: 5px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .contact-button {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+            margin: 0 5px;
+        }
+
+        .call-now {
+            background-color: #4CAF50;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .connect {
+            background-color: #2e3192;
+        }
+
+        .view-all-products {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: #2e3192;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .product-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .search-box {
+                width: 200px;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+            }
+
+            .contact-button {
+                margin: 5px 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .product-card {
+            animation: fadeIn 0.5s ease-out;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <h1>AxelGuard Products</h1>
+    </nav>
+
     <div class="container">
-        <h1> AxelGuard Products</h1>
-        <form>
+        <div class="search-container">
             <input type="search" id="search-input" placeholder="Search products..." class="search-box">
             <button id="search-button" class="search-button">Search</button>
-        </form>
+        </div>
         <div class="product-gallery">
+            <!-- Products will be dynamically added here -->
         </div> 
+        <!-- <a href="#" class="view-all-products">View All Products</a> -->
     </div>
 
-    <script >
+    <script>
+    function fetch_data() {
+        const jsonUrl = 'info.json';
 
-function fetch_data() {
-    const jsonUrl = 'info.json';
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                const filteredRows = data.filter(row => {
+                    const serialNo = row["S. No"].toString().trim();
+                    return serialNo && /^[0-9]+$/.test(serialNo);
+                });
 
-    fetch(jsonUrl)
-        .then(response => response.json())
-        .then(data => {
-            // Filter out invalid rows where the serial number is not a valid number
-            const filteredRows = data.filter(row => {
-                const serialNo = row["S. No"].toString().trim();
-                return serialNo && /^[0-9]+$/.test(serialNo);
-            });
-
-            const gallery = document.querySelector('.product-gallery');
-            filteredRows.forEach(row => {
-                const productName = row["Product Name"];
-                const productCode = row["Product Code"];
-                const weight = row["Weight in Kg"];
-                const productImage1 = row["Product Images1"];
-                const productDescription = `Product Code: ${productCode}, Weight: ${weight}kg`;
-                
-                const productCard = document.createElement('div');
-                productCard.classList.add('product-card');
-                productCard.innerHTML = `
-                    <a href="description.html?productCode=${productCode}">
+                const gallery = document.querySelector('.product-gallery');
+                filteredRows.forEach((row, index) => {
+                    const productName = row["Product Name"];
+                    const productCode = row["Product Code"];
+                    const weight = row["Weight in Kg"];
+                    const productImage1 = row["Product Images1"];
+                    const productDescription = `Product Code: ${productCode}, Weight: ${weight}kg`;
+                    const features = row["Product Specification"].features.slice(0, 3);
+                    
+                    const productCard = document.createElement('div');
+                    productCard.classList.add('product-card');
+                    productCard.style.animationDelay = `${index * 0.1}s`;
+                    productCard.innerHTML = `
                         <img src="${productImage1}" alt="${productName}">
                         <div class="product-info">
                             <h3>${productName}</h3>
                             <p>${productDescription}</p>
-                            <div class="compare-section">
-                                <label>
+                            <div class="product-features">
+                                <ul>
+                                    ${features.map(feature => `<li>${feature}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="product-actions">
+                                <a href="description.html?productCode=${productCode}" class="view-details">View Details</a>
+                                <label class="compare-checkbox">
                                     <input type="checkbox" name="compare" value="${productCode}">
-                                    Add to Compare
+                                    Compare
                                 </label>
                             </div>
+                            <div class="contact-buttons">
+                                <a href="tel:+1234567890" class="contact-button call-now">Call Now</a>
+                                <a href="https://wa.me/1234567890" class="contact-button whatsapp">WhatsApp</a>
+                                <a href="#" class="contact-button connect">Connect</a>
+                            </div>
                         </div>
-                    </a>
-                `;
-                gallery.appendChild(productCard);
-            });
-        })
-        .catch(error => console.error('Error fetching the JSON file:', error));
-}
+                    `;
+                    gallery.appendChild(productCard);
+                });
+            })
+            .catch(error => console.error('Error fetching the JSON file:', error));
+    }
 
-function searchProducts() {
-    const searchInput = document.getElementById('search-input');
-    const searchQuery = searchInput.value.toLowerCase();
-    const gallery = document.querySelector('.product-gallery');
-    const products = gallery.children;
+    function searchProducts() {
+        const searchInput = document.getElementById('search-input');
+        const searchQuery = searchInput.value.toLowerCase();
+        const gallery = document.querySelector('.product-gallery');
+        const products = gallery.children;
 
-    Array.prototype.forEach.call(products, (product) => {
-        const productName = product.querySelector('h3').textContent.toLowerCase();
-        const productDescription = product.querySelector('p').textContent.toLowerCase();
+        Array.from(products).forEach((product) => {
+            const productName = product.querySelector('h3').textContent.toLowerCase();
+            const productDescription = product.querySelector('p').textContent.toLowerCase();
+            const productFeatures = product.querySelector('.product-features').textContent.toLowerCase();
 
-        if (productName.includes(searchQuery) || productDescription.includes(searchQuery)) {
-            product.style.display = 'block';
-        } else {
-            product.style.display = 'none';
-        }
-    });
-}
+            if (productName.includes(searchQuery) || productDescription.includes(searchQuery) || productFeatures.includes(searchQuery)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
 
-document.getElementById('search-input').addEventListener('keyup', searchProducts);
+    document.getElementById('search-input').addEventListener('keyup', searchProducts);
+    document.getElementById('search-button').addEventListener('click', searchProducts);
 
-fetch_data();
+    fetch_data();
     </script>
 </body>
 </html>
