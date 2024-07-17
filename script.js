@@ -41,7 +41,7 @@ function toggleMenu() {
 
 
 function fetch_data() {
-    const jsonUrl = 'data.json';
+    const jsonUrl = 'info.json';
 
     fetch(jsonUrl)
         .then(response => response.json())

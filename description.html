@@ -6,10 +6,28 @@
     <title>Product Description</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .navbar {
+            background-color: #0077b6;
+            padding: 10px 20px;
+            color: white;
+        } */
+
         .container {
             display: flex;
             flex-wrap: wrap;
-            padding: 120px 0px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 70px auto;
+            max-width: 1200px;
         }
 
         .product-details {
@@ -18,10 +36,10 @@
         }
 
         .product-image {
-            width: 600px;
-            height: 480px;
+            width: 400px;
+            height: 400px;
             object-fit: contain;
-            border: 1px solid rgb(66, 64, 64);
+            /* border: 1px solid #ddd; */
             margin-bottom: 20px;
         }
 
@@ -32,57 +50,114 @@
         }
 
         .thumbnail-image {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             object-fit: cover;
             margin-right: 10px;
             cursor: pointer;
+            border: 1px solid #ddd;
         }
 
         .thumbnail-image.active {
-            border: 2px solid rgb(93, 93, 225);
+            border: 2px solid #0077b6;
         }
 
         .product-info {
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #0077b6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, tr, td {
+            border: 1px solid #ddd;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        #pdfDownloadContainer {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 0;
+            background-color: #0077b6;
+            display: inline-block;
+        }
+
+        #pdfDownloadContainer a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        #pdfDownloadContainer:hover {
+            background-color: #005b8a;
+        }
+
+        .site-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
 
         @media (min-width: 768px) {
             .product-details {
                 flex: 1 1 50%;
-                text-align: left;
             }
 
             .thumbnail-container {
                 justify-content: flex-start;
             }
         }
-        #pdfDownloadContainer {
-            text-decoration: none;
-            color: black;
-            padding: 10px;
-            border: 1px solid rgb(104, 104, 143);
-            border-radius: 20px;
-            margin: 10px;
-            position: relative;
-            top: 20px;
-            background-color: #e8e3ed;
-            display: inline-block;
-        }
-        #pdfDownloadContainer a{
-            text-decoration: none;
-            font-weight: 600;
-        }
-        #pdfDownloadContainer:hover {
-            background-color: #d1c8e1;
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .product-details {
+                flex: 1 1 100%;
+            }
+
+            .product-image {
+                max-width: 100%;
+            }
+
+            .thumbnail-image {
+                width: 50px;
+                height: 50px;
+            }
+
+            table, tr, td {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- navbar -->
+   <!-- navbar -->
 <nav class="navbar">
     <div class="navbar-left">
-        <a href="/index.html" class="logo"><img src="images/logo.png" alt="Hikvision Logo"></a>
+        <a href="#" class="logo"><img src="images/logo.png" alt="Hikvision Logo"></a>
     </div>
     <div class="navbar-right">
         <ul class="nav-links">
@@ -137,6 +212,7 @@
 </nav>
 
 
+
     <div class="container">
         <div class="product-details">
             <img class="product-image" id="productImage" src="" alt="">
@@ -147,11 +223,17 @@
                 <h1 id="productName"></h1>
                 <p id="productDescription"></p>
                 <div id="pdfDownloadContainer"></div>
+                <div class="product-specifications">
+                    <h2>Features</h2>
+                    <table id="productFeaturesTable"></table>
+                    <h2>Technical Features</h2>
+                    <table id="technicalFeaturesTable"></table>
+                </div>
             </div>
         </div>
     </div>
 
-     <!-- footer -->
+    <!-- footer -->
  <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-section">
@@ -211,74 +293,122 @@
       </div>
     </div>
   </footer>
+
     <script>
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-}
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
 
-function fetchProductData() {
-    const productCode = getQueryParam('productCode');
+    function fetchProductData() {
+        const productCode = getQueryParam('productCode');
 
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const product = data.find(row => row["Product Code"] === productCode);
-            if (product) {
-                document.getElementById('productName').textContent = product["Product Name"];
-                document.getElementById('productDescription').textContent = `Product Code: ${product["Product Code"]}, Weight: ${product["Weight in Kg"]}kg`;
+        fetch('info.json')
+            .then(response => response.json())
+            .then(data => {
+                const product = data.find(row => row["Product Code"] === productCode);
+                if (product) {
+                    document.getElementById('productName').textContent = product["Product Name"];
+                    document.getElementById('productDescription').textContent = `Product Code: ${product["Product Code"]}, Weight: ${product["Weight in Kg"]}kg`;
 
-                const productImages = [
-                    product["Product Images1"],
-                    product["Product Images2"],
-                    product["Product Images3"],
-                    product["Product Images4"],
-                    product["Product Images5"]
-                ];
+                    const productImages = [
+                        product["Product Images1"],
+                        product["Product Images2"],
+                        product["Product Images3"],
+                        product["Product Images4"],
+                        product["Product Images5"]
+                    ];
 
-                const thumbnailContainer = document.getElementById('thumbnailContainer');
-                let thumbnailImages = [];
+                    const thumbnailContainer = document.getElementById('thumbnailContainer');
+                    let thumbnailImages = [];
 
-                productImages.forEach((image, index) => {
-                    if (image) {
-                        const thumbnailImage = document.createElement('img');
-                        thumbnailImage.classList.add('thumbnail-image');
-                        thumbnailImage.src = image;
-                        thumbnailImage.alt = product["Product Name"];
-                        thumbnailImage.addEventListener('click', () => {
-                            document.getElementById('productImage').src = image;
-                            setActiveThumbnail(index);
-                        });
-                        thumbnailContainer.appendChild(thumbnailImage);
-                        thumbnailImages.push(thumbnailImage);
+                    productImages.forEach((image, index) => {
+                        if (image) {
+                            const thumbnailImage = document.createElement('img');
+                            thumbnailImage.classList.add('thumbnail-image');
+                            thumbnailImage.src = image;
+                            thumbnailImage.alt = product["Product Name"];
+                            thumbnailImage.addEventListener('click', () => {
+                                document.getElementById('productImage').src = image;
+                                setActiveThumbnail(index);
+                            });
+                            thumbnailContainer.appendChild(thumbnailImage);
+                            thumbnailImages.push(thumbnailImage);
 
-                        // Set the first image as active
-                        if (index === 0) {
-                            thumbnailImage.classList.add('active');
-                            document.getElementById('productImage').src = image;
+                            if (index === 0) {
+                                thumbnailImage.classList.add('active');
+                                document.getElementById('productImage').src = image;
+                            }
                         }
+                    });
+
+                    const features = product["Product Specification"];
+
+                    const productFeaturesTable = document.getElementById('productFeaturesTable');
+                    productFeaturesTable.innerHTML = '';
+                    features.features.forEach(feature => {
+                        const row = document.createElement('tr');
+                        const headingCell = document.createElement('td');
+                        const descriptionCell = document.createElement('td');
+
+                        if (feature.includes(':')) {
+                            const [heading, ...descriptionParts] = feature.split(':');
+                            headingCell.style.fontWeight = 'bold';
+                            headingCell.textContent = heading.trim();
+                            descriptionCell.textContent = descriptionParts.join(':').trim();
+                        } else {
+                            headingCell.textContent = '';
+                            descriptionCell.colSpan = 2;
+                            descriptionCell.textContent = feature.trim();
+                        }
+
+                        row.appendChild(headingCell);
+                        row.appendChild(descriptionCell);
+                        productFeaturesTable.appendChild(row);
+                    });
+
+                    const technicalFeaturesTable = document.getElementById('technicalFeaturesTable');
+                    technicalFeaturesTable.innerHTML = '';
+                    features.technical_parameters.forEach(feature => {
+                        const row = document.createElement('tr');
+                        const headingCell = document.createElement('td');
+                        const descriptionCell = document.createElement('td');
+
+                        if (feature.includes(':')) {
+                            const [heading, ...descriptionParts] = feature.split(':');
+                            headingCell.style.fontWeight = 'bold';
+                            headingCell.textContent = heading.trim();
+                            descriptionCell.textContent = descriptionParts.join(':').trim();
+                        } else {
+                            headingCell.textContent = '';
+                            descriptionCell.colSpan = 2;
+                            descriptionCell.textContent = feature.trim();
+                        }
+
+                        row.appendChild(headingCell);
+                        row.appendChild(descriptionCell);
+                        technicalFeaturesTable.appendChild(row);
+                    });
+
+                    if (product["Product DataSheet"]) {
+                        const pdfDownloadContainer = document.getElementById('pdfDownloadContainer');
+                        const pdfDownloadLink = document.createElement('a');
+                        pdfDownloadLink.href = product["Product DataSheet"];
+                        pdfDownloadLink.textContent = 'Download Product Features PDF';
+                        pdfDownloadLink.download = '';
+                        pdfDownloadContainer.appendChild(pdfDownloadLink);
                     }
-                });
 
-                if (product["Product DataSheet"]) {
-                            const pdfDownloadContainer = document.getElementById('pdfDownloadContainer');
-                            const pdfDownloadLink = document.createElement('a');
-                            pdfDownloadLink.href = product["Product DataSheet"];
-                            pdfDownloadLink.textContent = 'Download Product Features PDF';
-                            pdfDownloadLink.download = '';
-                            pdfDownloadContainer.appendChild(pdfDownloadLink);
-                        }
-                
-                activateNextThumbnail(thumbnailImages, productImages);
-            } else {
-                document.querySelector('.product-info').textContent = 'Product not found.';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching product data:', error);
-            document.querySelector('.product-info').textContent = 'Error fetching product data.';
-        });
-}
+                    activateNextThumbnail(thumbnailImages, productImages);
+                } else {
+                    document.querySelector('.product-info').textContent = 'Product not found.';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching product data:', error);
+                document.querySelector('.product-info').textContent = 'Error fetching product data.';
+            });
+    }
 
     function setActiveThumbnail(index) {
         const thumbnailImages = document.querySelectorAll('.thumbnail-image');
