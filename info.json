@@ -1,6 +1,5 @@
 [
     {
-      "S. No": 1,
       "S.No": 1,
       "Product Name": "4ch 1080p SD Card MDVR (MR9504EC)",
       "Product Code": "AXG01",
@@ -28,7 +27,6 @@
       }
     },
     {
-      "S. No": 2,
       "S.No": 2,
       "Product Name": "4ch 1080p HDD MDVR (MR9704C)",
       "Product Code": "AXG02",
@@ -62,7 +60,6 @@
       }
     },
     {
-      "S. No": 3,
       "S.No": 3,
       "Product Name": "4ch 1080p SD, 4G, GPS MDVR (MR9504E)",
       "Product Code": "AXG03",
@@ -104,7 +101,6 @@
       }
     },
     {
-      "S. No": 4,
       "S.No": 4,
       "Product Name": "4ch 1080p HDD, 4G, GPS MDVR (MR9704E)",
       "Product Code": "AXG04",
@@ -138,7 +134,6 @@
       }
     },
     {
-      "S. No": 5,
       "S.No": 5,
       "Product Name": "4ch 1080p SD, 4G, wifi, GPS MDVR (MA9504ED)",
       "Product Code": "AXG58",
@@ -180,7 +175,6 @@
       }
     },
     {
-      "S. No": 6,
       "S.No": 6,
       "Product Name": "TVS 4ch 1080p SD, 4G, GPS MDVR",
       "Product Code": "TVS43",
@@ -191,10 +185,13 @@
       "Product Images2": "",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 7,
       "S.No": 7,
       "Product Name": "5ch MDVR SD 4g + GPS + LAN + RS232 + RS485",
       "Product Code": "AXG46",
@@ -205,10 +202,37 @@
       "Product Images2": "/images/SDcardMDVR/SD card 5ch MDVR1.jpg",
       "Product Images3": "/images/SDcardMDVR/SD card 5ch MDVR2.jpg",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "Chipset: H.264/H.265 standard for high compression and image quality",
+          "Video Input: Supports AHD/TVI/CVI/IPC/ANALOG",
+          "Outputs: 1CH AV, 1CH VGA",
+          "Power: Operates on 8-36V DC with multiple protection circuits",
+          "G-Sensor: Monitors driving habits",
+          "Storage: Supports SD cards up to 512GB, with built-in super capacitor to prevent data loss",
+          "Transmission: Optional GPS/BD/GLONASS, WiFi, and 3G/4G",
+          "OS: Embedded Linux with GUI interface",
+          "Resolution: 1080P/720P/960H/D1/CIF",
+          "Recording: Automatic/Alarm modes, 4CH local playback",
+          "Interface: 4 AV inputs, 1 USB 2.0, 1 SDXC slot, and more",
+          "Power Consumption: Maximum 18W@12V, standby 8.5mA",
+          "Dimensions: 142 x 153 x 33 mm",
+          "Temperature Range: -20 to 70°C"
+        ],
+        "technical_parameters": [
+          "Operating System: Embedded Linux OS",
+          "Video Standard: PAL/NTSC",
+          "Compression: H.264/H264+/H265/H265+",
+          "Playback Quality: 1080P/720P/960H/D1/CIF",
+          "Audio Compression: G711A, G711, G.726, MG.726, ADPCM, IMA",
+          "Decoding Ability: 4CH 1080P",
+          "Ethernet: 1 x 6-pin aviation to RJ45 (10M/100M)",
+          "Storage Size: 1080P - 1G/h/channel, 720P - 0.5G/h/channel, 960H - 0.38G/h/channel"
+        ]
+      }
     },
     {
-      "S. No": 8,
       "S.No": 8,
       "Product Name": "5ch MDVR HDD 4g + GPS + LAN + RS232 + RS485",
       "Product Code": "AXG47",
@@ -219,10 +243,29 @@
       "Product Images2": "/images/SDcardMDVR/SD card 5ch MDVR1.jpg",
       "Product Images3": "/images/SDcardMDVR/SD card 5ch MDVR2.jpg",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "Chipsets: Built-in high-performance chipsets, coded with H.265 standard",
+          "Video Input: Supports AHD, TVI, CVI, IPC, and Analog formats",
+          "Live Preview and Storage: 4+1 channels",
+          "Video Output: 1CH synchronized AV output, 1CH VGA output",
+          "G-sensor: Built-in for monitoring driving habits",
+          "Reverse Assistance: Allows for horizontal and vertical camera image adjustment"
+        ],
+        "technical_parameters": [
+          "Operating System: Embedded Linux OS",
+          "Interface: GUI, supports mouse and remote control",
+          "Password Security: Two-layer password protection (Admin/User)",
+          "Video Compression: H.265",
+          "Image Resolution: 1080P/720P/960H/D1/CIF",
+          "Recording Modes: Manual and Alarm",
+          "Interface Ports:AV input: 4CH 4-pin aviation + 1CH 6-pin aviation for IPC ,AV output: 1CH VGA, 1CH aviation AV output, USB: 1 USB 2.0 (supports U disk/mouse),Ethernet: 1 x 6-pin aviation to RJ45 (10M/100M),Additional Ports: UART, ignition input, disaster recovery, debug port",
+          "Dimensions: 162mm x 153mm x 52mm"
+        ]
+      }
     },
     {
-      "S. No": 9,
       "S.No": 9,
       "Product Name": "8ch HDD 4g+GPS MDVR (MR9708C)",
       "Product Code": "8ch HDD",
@@ -233,7 +276,27 @@
       "Product Images2": "/images/8ch_mdvr_hdd/8ch MDVR HDD.jpg",
       "Product Images3": "/images/8ch_mdvr_hdd/8ch MDVR HDD2.jpg",
       "Product Images4": "/images/8ch_mdvr_hdd/8ch MDVR HDD3.jpg",
-      "Product Images5": "/images/8ch_mdvr_hdd/8ch MDVR HDD4.jpg"
+      "Product Images5": "/images/8ch_mdvr_hdd/8ch MDVR HDD4.jpg",
+      "Product Specification": {
+        "features": [
+          "Chipsets: Built-in high-performance chipsets, coded with H.265 standard",
+          "Video Input: Supports AHD, TVI, CVI, IPC, and Analog formats",
+          "Live Preview and Storage: 4+1 channels",
+          "Video Output: 1CH synchronized AV output, 1CH VGA output",
+          "G-sensor: Built-in for monitoring driving habits",
+          "Reverse Assistance: Allows for horizontal and vertical camera image adjustment"
+        ],
+        "technical_parameters": [
+          "Operating System: Embedded Linux OS",
+          "Interface: GUI, supports mouse and remote control",
+          "Password Security: Two-layer password protection (Admin/User)",
+          "Video Compression: H.265",
+          "Image Resolution: 1080P/720P/960H/D1/CIF",
+          "Recording Modes: Manual and Alarm",
+          "Interface Ports: AV input: 4CH 4-pin aviation + 1CH 6-pin aviation for IPC, AV output: 1CH VGA, 1CH aviation AV output,USB: 1 USB 2.0 (supports U disk/mouse),Ethernet: 1 x 6-pin aviation to RJ45 (10M/100M),Additional Ports: UART, ignition input, disaster recovery, debug port",
+          "Dimensions: 162mm x 153mm x 52mm"
+        ]
+      }
     },
     {
       "S. No": 10,
@@ -247,10 +310,30 @@
       "Product Images2": "/images/AI_mdvr/Al mdvr 2.jpg",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "Integrated Safety Systems: ADAS, DSM, BSD",
+          "Advanced Compression: H.265 video encoding for high image quality and storage efficiency",
+          "High-Quality Video: Supports 4CH 1080P/720P AHD",
+          "Data Security: Built-in super capacitor to prevent data loss",
+          "Comprehensive Connectivity: GPS/BD/GLONASS, 4G, optional WiFi"
+        ],
+        "technical_parameters": [
+          "System: Embedded Linux OS",
+          "Video Input: 4CH 1080P AHD/TVI/CVI/CVBS",
+          "Video Output: VGA + CVBS",
+          "Audio Input/Output: 4CH input, 2CH analog output",
+          "Video Compression: H.264/H.265",
+          "Storage: Supports SD cards (up to 2x512 GB)",
+          "Wireless Module: GPS/BD/GLONASS, 4G, optional WiFi",
+          "Power Supply: 8-36V DC wide voltage, intelligent power management",
+          "Operating Temperature: -10°C to +40°C",
+          "Dimensions: 142mm x 153mm x 33mm"
+        ]
+      }    
     },
     {
-      "S. No": 11,
       "S.No": 11,
       "Product Name": "AI MDVR with (DSM + ADAS) (SD+HDD+ 4g + GPS)",
       "Product Code": "AXG72",
@@ -261,11 +344,31 @@
       "Product Images2": "/images/AI_mdvr/Al mdvr 2.jpg",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "Integrated Safety Systems: ADAS, DSM, BSD",
+          "High-Quality Video: Supports 4CH 1080P/720P AHD with H.265 video encoding",
+          "Advanced Data Security: Built-in super capacitor, HDD and SD card support",
+          "Comprehensive Connectivity: GPS/BD/GLONASS, 4G, optional WiFi",
+          "Robust Power Management: 9-36V DC wide voltage, intelligent power management"
+        ],
+        "technical_parameters": [
+          "System: Embedded Linux OS",
+          "Video Input: 4CH 1080P AHD/TVI/CVI/CVBS",
+          "Video Output: VGA + CVBS",
+          "Audio Input/Output: 4 CH input, 2 CH analog output",
+          "Video Compression: H.264/H.265",
+          "Storage: Supports HDD and SD cards (up to 512 GB)",
+          "Wireless Module: Built-in GPS/BD/GLONASS, 4G module, optional WiFi",
+          "Power Supply: DC 9-36V, low power consumption, various protections",
+          "Operating Temperature: -10°C to +40°C",
+          "Dimensions: 162mm x 153mm x 52mm"
+        ]
+      }
     },
     {
-      "S. No": 12,
-      "S.No": 1,
+      "S.No": 12,
       "Product Name": "7\" AV Monitor",
       "Product Code": "AXG05",
       "Weight in Kg": 1,
@@ -275,11 +378,14 @@
       "Product Images2": "/images/7inch_vga/7inch VGA1.jpg",
       "Product Images3": "/images/7inch_vga/7inch VGA2.jpg",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 13,
-      "S.No": 2,
+      "S.No": 13,
       "Product Name": "7\" VGA Monitor",
       "Product Code": "AXG06",
       "Weight in Kg": 1,
@@ -289,11 +395,14 @@
       "Product Images2": "/images/7inch_vga/7inch VGA.jpg",
       "Product Images3": "/images/7inch_vga/7inch VGA2.jpg",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 14,
-      "S.No": 3,
+      "S.No": 14,
       "Product Name": "7\" HDMI Monitor",
       "Product Code": "HDMI Monitor",
       "Weight in Kg": 1,
@@ -303,11 +412,14 @@
       "Product Images2": "/images/7inch_vga/7inch VGA.jpg",
       "Product Images3": "/images/7inch_vga/7inch VGA1.jpg",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 15,
-      "S.No": 4,
+      "S.No": 15,
       "Product Name": "7inch Heavy Duty VGA Monitor",
       "Product Code": "AXG56",
       "Weight in Kg": 1,
@@ -317,11 +429,26 @@
       "Product Images2": "/images/Heavy_duty/Heavy_duty_camera1.jpg",
       "Product Images3": "/images/Heavy_duty/Heavy_duty_camera2.jpg",
       "Product Images4": "/images/Heavy_duty/Heavy_duty_camera3.jpg",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "Screen Size and Ratio: 7-inch TFT-LCD screen with a 16:9 aspect ratio",
+          "High Resolution: Display resolution of 800x480 pixels",
+          "Brightness and Contrast: Offers a brightness of 350 cd/m² and a contrast ratio of 400:1",
+          "Wide Viewing Angle: View angle is 70° (Up), 45° (Down), and 70° (Left/Right)",
+          "Multi-language OSD: Supports multiple languages including Chinese, English, German, French, and Italian"
+        ],
+        "technical_parameters": [
+          "Power Input: Operates on a DC input of +9V to +35V",
+          "Power Consumption: Less than 6W",
+          "Temperature Range: Working temperature is -30°C to 70°C; storage temperature is -40°C to 75°C",
+          "Video Input: Supports CVBS and VGA video inputs",
+          "Dimensions and Weight: Measures 185mm (L) x 135mm (W) x 60mm (T) with a sunhat, and weighs approximately 0.45 kg"
+        ]
+      }
     },
     {
-      "S. No": 16,
-      "S.No": 5,
+      "S.No": 16,
       "Product Name": "4inch AV monitor",
       "Product Code": "AXG37",
       "Weight in Kg": 0.6,
@@ -331,11 +458,14 @@
       "Product Images2": "",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 17,
-      "S.No": 6,
+      "S.No": 17,
       "Product Name": "4k Recording monitor kit",
       "Product Code": "AXG22",
       "Weight in Kg": 3,
@@ -345,11 +475,14 @@
       "Product Images2": "",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 18,
-      "S.No": 7,
+      "S.No": 18,
       "Product Name": "720 2ch Recording Monitor Kit",
       "Product Code": "AXG69",
       "Weight in Kg": 3,
@@ -359,11 +492,14 @@
       "Product Images2": "/images/720_2ch_monitor_kit/720 2ch monitor kit1.jpg",
       "Product Images3": "/images/720_2ch_monitor_kit/720 2ch monitor kit.jpg",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 18,
-      "S.No": 1,
+      "S.No": 19,
       "Product Name": "2 MP IR indoor Dome Camera",
       "Product Code": "AXG10",
       "Weight in Kg": 0.3,
@@ -373,11 +509,25 @@
       "Product Images2": "/images/Indore_dome_camera/Indoor_Dome_camera1.jpg",
       "Product Images3": "/images/Indore_dome_camera/Indoor_Dome_camera2.jpg",
       "Product Images4": "/images/Indore_dome_camera/Indoor_Dome_camera3.jpg",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "True Night Vision: Provides effective night vision up to 150 meters, ensuring clear images in low-light conditions",
+          "Full HD Real-Time Video: Delivers 1080p full HD real-time video for clear and detailed monitoring",
+          "Advanced Compression Technology: Utilizes H.265/H.264 compression to optimize storage without compromising video quality",
+          "360° Endless Rotation: Supports continuous 360° pan and 180° tilt for comprehensive coverage",
+          "Preset Tours: Includes 128 preset positions, 8 preset tours, and 4 shadow tours for automated and flexible monitoring"
+        ],
+        "technical_parameters": [
+          "Image Sensor: Equipped with a 2.1 megapixel 1/3” Progressive Scan CMOS sensor for high-quality image capture",
+          "IR Range: Smart IR technology extends night vision capabilities up to 150 meters",
+          "Wide Dynamic Range (DWDR): Ensures balanced exposure in varying lighting conditions for clearer images",
+          "ONVIF Compliance: Compatible with ONVIF standards, facilitating integration with various security systems"
+        ]
+      }
     },
     {
-      "S. No": 19,
-      "S.No": 2,
+      "S.No": 20,
       "Product Name": "2 MP IR Outdoor Bullet Camera",
       "Product Code": "AXG11",
       "Weight in Kg": 0.3,
@@ -387,11 +537,26 @@
       "Product Images2": "/images/outdoor_bullet_camera/Bullet_camera1.jpg",
       "Product Images3": "/images/outdoor_bullet_camera/Bullet_camera2.jpg",
       "Product Images4": "/images/outdoor_bullet_camera/Bullet_camera3.jpg",
-      "Product Images5": "/images/outdoor_bullet_camera/Bullet_camera4.jpg"
+      "Product Images5": "/images/outdoor_bullet_camera/Bullet_camera4.jpg",
+      "Product Specification": {
+        "features": [
+          "True Night Vision: Capable of providing clear images at a distance of up to 150 meters in complete darkness",
+          "High-Resolution Sensor: Equipped with a 2 MPX Full HD sensor for clear and detailed video quality",
+          "Full HD Real-Time Video: Supports 1080p real-time video for high-quality surveillance footage",
+          "Advanced Compression Technology: Utilizes H.265/264 advanced compression technology to optimize storage and bandwidth usage",
+          "ONVIF Compliant: Ensures compatibility with a wide range of surveillance equipment and platforms"
+        ],
+        "technical_parameters": [
+          "Progressive Scan CMOS: Features a 1/2.8\" progressive scan CMOS sensor for high-quality image capture",
+          "360° Endless Rotation: Offers continuous 360° rotation for comprehensive area coverage",
+          "High-Speed Pan and Tilt: Pan preset speed of 240°/s and tilt preset speed of 200°/s for rapid repositioning and tracking",
+          "Wide Dynamic Range (DWDR): Enhances image quality in varied lighting conditions, ensuring clear visibility",
+          "Robust Construction: IP66 rated for water and dust resistance, with TVS3000V lightning and surge protection for durability in harsh environments"
+        ]
+      }
     },
     {
-      "S. No": 20,
-      "S.No": 3,
+      "S.No": 21,
       "Product Name": "2 MP Heavy Duty Bullet Camera",
       "Product Code": "AXG57",
       "Weight in Kg": 0.4,
@@ -401,11 +566,26 @@
       "Product Images2": "/images/Heavy_duty/Heavy_duty_camera1.jpg",
       "Product Images3": "/images/Heavy_duty/Heavy_duty_camera2.jpg",
       "Product Images4": "/images/Heavy_duty/Heavy_duty_camera3.jpg",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "True Night Vision: Capable of providing clear images at a distance of up to 150 meters in complete darkness",
+          "High-Resolution Sensor: Equipped with a 2 MPX Full HD sensor for clear and detailed video quality",
+          "Full HD Real-Time Video: Supports 1080p real-time video for high-quality surveillance footage",
+          "Advanced Compression Technology: Utilizes H.265/264 advanced compression technology to optimize storage and bandwidth usage",
+          "ONVIF Compliant: Ensures compatibility with a wide range of surveillance equipment and platforms"
+        ],
+        "technical_parameters": [
+          "Progressive Scan CMOS: Features a 1/2.8\" progressive scan CMOS sensor for high-quality image capture",
+          "360° Endless Rotation: Offers continuous 360° rotation for comprehensive area coverage",
+          "High-Speed Pan and Tilt: Pan preset speed of 240°/s and tilt preset speed of 200°/s for rapid repositioning and tracking",
+          "Wide Dynamic Range (DWDR): Enhances image quality in varied lighting conditions, ensuring clear visibility",
+          "Robust Construction: IP66 rated for water and dust resistance, with TVS3000V lightning and surge protection for durability in harsh environments"
+        ]
+      }
     },
     {
-      "S. No": 21,
-      "S.No": 4,
+      "S.No": 22,
       "Product Name": "2 MP Heavy Duty Dome Camera",
       "Product Code": "AXG 58",
       "Weight in Kg": 0.4,
@@ -415,10 +595,26 @@
       "Product Images2": "/images/heavy_duty_dome_camera/Dome_camera1.jpg",
       "Product Images3": "/images/heavy_duty_dome_camera/Dome_camera2.jpg",
       "Product Images4": "/images/heavy_duty_dome_camera/Dome_camera3.jpg",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [
+          "Durability: The camera is designed to withstand harsh environments, making it suitable for outdoor and industrial applications",
+          "High Resolution: It offers high-resolution imaging to ensure clear and detailed video footage",
+          "Weatherproof: The camera is weatherproof, ensuring reliable operation in various weather conditions",
+          "Vandal Resistance: Built to resist tampering and vandalism, enhancing security and longevity",
+          "Wide Dynamic Range (WDR): Equipped with WDR technology to handle scenes with varying lighting conditions, ensuring clear images in both bright and dark areas"
+        ],
+        "technical_parameters": [
+          "Resolution: Supports resolutions up to 1080p for high-definition video quality",
+          "Ingress Protection (IP) Rating: Typically rated IP66 or higher for dust and water resistance",
+          "Infrared (IR) LEDs: Integrated IR LEDs for night vision capabilities, allowing the camera to capture footage in complete darkness",
+          "Power over Ethernet (PoE): Supports PoE for simplified installation and power management",
+          "Operating Temperature Range: Capable of operating in a wide temperature range, often from -40°C to 60°C, ensuring functionality in extreme climates"
+        ]
+      }
     },
     {
-      "S. No": 22,
+      "S. No": 23,
       "S.No": 5,
       "Product Name": "PTZ Camera",
       "Product Code": "AXG32",
@@ -429,10 +625,14 @@
       "Product Images2": "",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
-      "S. No": 23,
+      "S. No": 24,
       "S.No": 6,
       "Product Name": "4k Monitor Camera",
       "Product Code": "AXG33",
@@ -443,7 +643,11 @@
       "Product Images2": "",
       "Product Images3": "",
       "Product Images4": "",
-      "Product Images5": ""
+      "Product Images5": "",
+      "Product Specification": {
+        "features": [ ],
+        "technical_parameters": [ ]
+      }
     },
     {
       "S. No": 24,
